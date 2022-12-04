@@ -24,13 +24,24 @@
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-evenly;
+}
+.project-list .userDisplayName{
+  font-size: 0.9em;
+  color: blue;
+  
 }
 .project-list ul {
   margin: 10px 0;
   display: flex;
 }
 .project-list li {
-  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
 }
 .project-list .avatar {
   width: 30px;

@@ -16,11 +16,13 @@ export default function ProjectList({ projects }) {
         <Link to={`/projects/${project.id}`} key={project.id}>
           <h4>{project.name}</h4>
           <p>Due by {project.dueDate.toDate().toDateString()}</p>
+          <h4>Created By:  {project.createdByList.displayName.toUpperCase()}</h4>
           <div className="assigned-to">
             <ul>
             {project.assignedUsersList.map(user => (
               <li key={user.photoURL}>
                 <Avatar src={user.photoURL} />
+                <p className='userDisplayName'>{user.displayName}</p>
               </li>
             ))}
             </ul>
