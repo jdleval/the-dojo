@@ -65,11 +65,11 @@ export default function Create() {
       id: user.uid,//person who created the project
     };
 
-    const assignedUsersList = assignedUsers.map((userAssigned) => {
+    const assignedUsersList = assignedUsers.map((u) => {
       return {
-        displayName: userAssigned.value.displayName,
-        photoURL: userAssigned.value.photoURL,
-        id: userAssigned.value.id,
+        displayName: u.value.displayName,
+        photoURL: u.value.photoURL,
+        id: u.value.id,
       };
     });
 
